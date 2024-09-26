@@ -226,7 +226,7 @@ def main():
             move_log_copy = move_log.copy()
             en_passant_possible_copy = en_passant_possible
             castling_rights_copy = copy.deepcopy(castling_rights)
-            move = bot.get_move(board, turn, en_passant_possible_copy, castling_rights_copy, move_log_copy)
+            move = bot.get_move(board, en_passant_possible_copy, castling_rights_copy, move_log_copy)
             if move:
                 start_pos, end_pos = move
                 # Make the move
